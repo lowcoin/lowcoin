@@ -1,0 +1,9 @@
+Building Lowcoin
+
+See doc/readme-qt.rst for instructions on building Lowcoin-Qt,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of Lowcoin.
+
+See doc/build-*.txt for instructions on building lowcoind,
+the intended-for-services, no-graphical-interface, reference
+implementation of Lowcoin.
