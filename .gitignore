@@ -1,0 +1,34 @@
+src/*.exe
+src/lowcoin
+src/lowcoind
+src/test_lowcoin
+.*.swp
+*.*~*
+*.bak
+*.rej
+*.orig
+*.o
+*.patch
+.lowcoin
+
+# Compilation and Qt preprocessor part
+*.qm
+Makefile
+lowcoin-qt
+Lowcoin-Qt.app
+
+# Unit-tests
+Makefile.test
+lowcoin-qt_test
+
+# Resources cpp
+qrc_*.cpp
+
+# Qt creator
+*.pro.user
+
+# Mac specific
+.DS_Store
+build
+
+!src/leveldb-*/Makefile

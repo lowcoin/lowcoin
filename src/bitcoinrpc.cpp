@@ -43,7 +43,7 @@ static boost::thread_group* rpc_worker_group = NULL;
 
 static inline unsigned short GetDefaultRPCPort()
 {
-    return GetBoolArg("-testnet", false) ? 16332 : 6232;
+    return GetBoolArg("-testnet", false) ? 19232 : 9232;
 }
 
 Object JSONRPCError(int code, const string& message)
@@ -97,7 +97,7 @@ void RPCTypeCheck(const Object& o,
 int64 AmountFromValue(const Value& value)
 {
     double dAmount = value.get_real();
-    if (dAmount <= 0.0 || dAmount > 2400000.00000000)
+    if (dAmount <= 0.0 || dAmount > 8400000.00000000)
         throw JSONRPCError(RPC_TYPE_ERROR, "Invalid amount");
     int64 nAmount = roundint64(dAmount * COIN);
     if (!MoneyRange(nAmount))
